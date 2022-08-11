@@ -1,7 +1,7 @@
 [package]
 name = "wasm-promise"
 authors= ["Mattia Pedrazzi"]
-version = "0.1.0"
+version = "0.1.2"
 edition = "2021"
 repository = "https://github.com/UsernameN0tAvailable/wasm-promise"
 homepage = "https://github.com/UsernameN0tAvailable/wasm-promise"
