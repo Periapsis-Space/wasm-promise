@@ -1,5 +1,5 @@
 [package]
-name = "wasm-promise"
+name = "wasm_promise"
 authors= ["Mattia Pedrazzi"]
 version = "0.1.2"
 edition = "2021"
