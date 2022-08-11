@@ -1,0 +1,19 @@
+[package]
+name = "wasm-promise"
+authors= ["Mattia Pedrazzi"]
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/UsernameN0tAvailable/wasm-promise"
+homepage = "https://github.com/UsernameN0tAvailable/wasm-promise"
+keywords = ["wasm", "parallel", "async", "promise"]
+categories = ["wasm"]
+description = "js promise wrapper which offers simplified api over native promise"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2.82"
+wasm-bindgen-futures = "0.4.32"
+js-sys = "0.3.59"
