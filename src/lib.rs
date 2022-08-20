@@ -37,6 +37,10 @@ impl WasmPromise {
         }
     }
 
+    pub fn set_promise(&mut self, p: Promise) {
+        self.context = p;
+    }
+
     pub fn reject(&self, a: JsValue) -> JsResult<JsValue> {
         self.cbs.borrow().1.call1(&self.context, &a)
     }
