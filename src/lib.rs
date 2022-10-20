@@ -41,6 +41,10 @@ impl WasmPromise {
         self.context = p;
     }
 
+    pub fn get_promise(&self) -> Promise {
+        self.context.clone()
+    }
+
     pub fn reject(&self, a: JsValue) -> JsResult<JsValue> {
         self.cbs.borrow().1.call1(&self.context, &a)
     }
